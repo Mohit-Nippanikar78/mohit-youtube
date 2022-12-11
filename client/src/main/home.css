@@ -1,0 +1,9 @@
+
+  .home-part3{
+  margin-left: var(--home-sidebar-width);
+  }
+  .home-part4{
+    margin-top:  calc(var(--home-videos-container-padding) + var(--home-filters-height)) ;
+  
+  
+  }

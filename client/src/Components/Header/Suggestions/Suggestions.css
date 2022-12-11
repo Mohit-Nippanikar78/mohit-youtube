@@ -1,0 +1,53 @@
+.head21-input-suggestions {
+  position: fixed;
+
+  bottom: calc(-70% - 15px);
+  background-color: white;
+
+  height: max-content;
+  padding: 10px 0px;
+  z-index: 9999999999;
+
+  overflow: hidden;
+  top: 42px;
+  animation: ani-suggestions 1s ease-in-out;
+  transform-origin: top;
+}
+@keyframes ani-suggestions {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.head21-input-suggestions-box {
+  color: black !important;
+  text-align: left;
+  padding: 5px;
+  animation: ani-suggestions-box 2s;
+
+  transform-origin: left;
+}
+@keyframes ani-suggestions-box {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(0);
+    background: turquoise;
+  }
+  85% {
+    background: turquoise;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+  /* 0%{width: 0%;}
+    50%{width: 0%;}
+    100%{width: 100%;} */
+}
+.head21-input-suggestions-box:hover {
+  background: cyan;
+}

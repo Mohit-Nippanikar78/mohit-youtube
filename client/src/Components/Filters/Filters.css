@@ -1,0 +1,90 @@
+.filter {
+  position: fixed;
+  width: 100%;
+  
+  width: calc(100% - var(--home-sidebar-width));
+  z-index: 1000;
+}
+.filter-outer {
+  position: relative;
+}
+
+.filter-inner {
+  height: var(--home-filters-height);
+  padding: 10px 0px;
+  overflow-x: scroll;
+  background-color: #1f1f1f;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+}
+.filter-inner::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
+
+.filter-outer ul {
+  display: flex;
+  list-style-type: none;
+}
+.filter-inner-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1px;
+  background-color: #1f1f1f;
+  border: 1px #212121 solid;
+  font-size: 20px;
+  color: white;
+}
+.filter-inner-btn::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 100%;
+  right: -40px;
+  background: linear-gradient(90deg, #1f1f1f, transparent);
+}
+.filter-inner-btn:last-of-type {
+  right: 0px;
+}
+.filter-inner-btn:last-of-type::after {
+  left: -40px;
+  background: linear-gradient(270deg, #1f1f1f, transparent);
+}
+.filter-inner-btn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: fixed;
+  padding: 10px;
+  height: 10px;
+}
+
+.filter-outer ul .filter-btn {
+  padding: 6px 10px;
+  border-radius: 15px;
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+    Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin: auto 4px;
+  /* Main color of filter-btn */
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.filter-outer .filter-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.filter-btn-active {
+  background-color: white !important;
+  border: white 1px solid Ipor !important;
+  color: black !important;
+}

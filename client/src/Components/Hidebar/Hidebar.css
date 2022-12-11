@@ -1,0 +1,113 @@
+:root {
+  --hidenav-width: 240px;
+}
+
+#sidenav{
+
+  z-index: 100000;
+}
+.sidenav {
+  position: fixed;
+  transition: 1s ease;
+  width: calc(7px + var(--hidenav-width));
+  top: 0px;
+  left: calc(-7px + var(--hidenav-width) * (-1));
+  z-index: 1;
+  background-color: #212121;
+  
+}
+
+.sidenav-mid-li {
+  width: var(--hidenav-width);
+  background-color: #212121;
+}
+.sidenav-mid-li:nth-child(4){
+  padding-bottom: 5px;
+  border-bottom: 0.1px white double;
+  
+}
+.sidenav-mid-li:nth-child(5){
+  padding-top: 5px;
+}
+
+
+.sidenav-top {
+  display: flex;
+  border-bottom: 1px white solid;
+  width: 100%;
+  background-color: #212121;
+  height: calc(var(--home-header-height) + 1px); 
+  
+  overflow: hidden;
+  top: 0px;
+}
+.sidenav-top-cross {
+  margin: auto 25px;
+  font-size: 20px;
+}
+.sidenav-top-logo {
+  position: relative;
+
+  width: 90px;
+  display: flex;
+}
+.sidenav-top-logo-inner::before {
+  content: "IN";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #aaa;
+  position: absolute;
+  right: -9px;
+  top: 10px;
+}
+.sidenav-mid {
+overflow-y: scroll;  
+position: fixed;
+  background: #212121;
+  height: 100%;
+  padding-bottom: 54px;
+  
+  
+}
+  
+
+.sidenav-mid::-webkit-scrollbar {
+  width: 7px;
+  padding: 0px 10px;
+  background-color: #212121;
+}
+.sidenav-mid:hover::-webkit-scrollbar-thumb {
+  width: 7px;
+  border-radius: 10px;
+  background-color: darkgray;
+}
+.sidenav-mid-li:last-child{
+  margin-bottom: 60px;
+}
+.sidenav-mid-content {
+  display: flex;
+}
+.sidenav-mid-content:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.sidenav-mid-icon {
+  padding: 8px 23px;
+  font-size: 20px;
+}
+.sidenav-mid-title {
+  padding: 8px 25px 8px 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.sidenav-active {
+  left: 0px;
+}
+.sidenav-mid-li-extra{
+  display: none;
+}

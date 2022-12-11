@@ -1,0 +1,28 @@
+.sidebar * {
+  color: rgb(156, 151, 151);
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: var(--home-sidebar-width);
+
+  background-color: #212121;
+  z-index: 0;
+  color: rgb(156, 151, 151);
+}
+
+.sidebar-option-lines {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 15px 0px;
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+.sidebar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.sidebar ul li:hover .sidebar-option-line-one {
+   font-size: 30px;
+}
