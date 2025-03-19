@@ -1,0 +1,125 @@
+.home-video {
+  position: relative;
+}
+.home-video-poster {
+  position: relative;
+  
+}
+
+.home-video-poster-timing {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2px 5px;
+  font-size: 13px;
+
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1;
+}
+.home-video-poster-shortcut-icons {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  
+z-index: 5;
+  font-size: 20px;
+}
+
+.home-video-poster-shortcut-icons-items-2 {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 3px;
+
+  transform-origin: right;
+  transition: ease 0.5s;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.home-video-info {
+  display: flex;
+  position: relative;
+}
+.home-video-info-outlet {
+  padding: 10px;
+}
+.home-video-info-title {
+  margin: 0px 20px 5px 0px;
+  font-size: 13px;
+}
+.home-video-info-channel-name {
+  font-size: 14px;
+  color: grey;
+  width: max-content;
+ white-space: nowrap;
+ 
+}
+.home-video-info-channel-name-title::after{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+  height: 2px;
+  background-color: #f33;
+  display: block;
+  content:"";
+  margin: auto;
+  
+}
+
+.home-video-info-channel-name-title:hover::after{
+ 
+  transform: scaleX(1);
+
+}
+.home-video-info-details-views,
+.home-video-info-details-time {
+  font-size: 14px;
+  color: grey;
+}
+.home-video-info-photo img {
+  width: 40px;
+  border-radius: 100%;
+  padding: 10px 5px;
+}
+.home-video-info-option {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+.home-video-option-table {
+  position: absolute;
+  bottom: -200px;
+  right: 0px;
+  z-index: 7;
+  background-color: #212121;
+  padding: 10px 0px;
+  border-radius: 10px;
+overflow: hidden;
+  transition: 1s ease;
+}
+
+.home-video-options {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.home-video-options:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.home-video-options-icon {
+  padding: 0px 15px;
+  font-size: 20px;
+}
+.home-video-options-title {
+  padding: 0px 15px 0px 0px;
+  font-size: 10px;
+}

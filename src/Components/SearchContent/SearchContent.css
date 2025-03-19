@@ -1,0 +1,10 @@
+.home-videos-container {
+    padding: calc(var(--home-filters-height) + 40px ) 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    background-color: #181818;
+    height: 100%;
+    
+  }

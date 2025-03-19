@@ -1,0 +1,127 @@
+header {
+  height: var(--home-header-height);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--yt-spec-black-3);
+  background-color: #212121;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 10000;
+}
+.head1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+ 
+}
+.head11 {
+  padding: 0px 25px;
+}
+
+.head11 i {
+  font-size: 20px;
+  display: flex;
+}
+.head12 {
+  padding: var(--navbar-padding-height) 25px var(--navbar-padding-height) 0px;
+  padding: 0px 25px 0px 0px;
+
+  position: relative;
+}
+.head121::before {
+  content: "IN";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--yt-spec-grey-2);
+  position: absolute;
+  right: 15px;
+  top: -6px;
+}
+.head121 {
+  width: 90px;
+}
+.head2 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.head2 input:focus {
+  border-color: #f33;
+}
+.head21 {
+  width: 100%;
+  display: flex;
+}
+.head21-input {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.head21-input input {
+  outline: 0px;
+  width: 100%;
+  background-color: var(--yt-spec-black-4);
+  border: 1px var(--yt-spec-grey-5) solid;
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 6px 30px 6px 10px;
+  font-size: 14px;
+}
+.head21-input .fa-times {
+  position: absolute;
+  width: 30px;
+  color: grey;
+  right: 0px;
+}
+
+.head21-icons {
+  width: max-content;
+  display: flex;
+}
+
+.head21-icons i {
+  font-size: 15px;
+  padding: 6px 10px;
+}
+.head21-searchbtn {
+  border: 2px var(--yt-spec-grey-5) solid;
+  background-color: var(--yt-spec-grey-5);
+}
+.head21-microphone {
+  margin: auto;
+}
+.head21 {
+  width: 100%;
+  display: flex;
+}
+
+.head3 {
+  display: flex;
+  align-items: center;
+
+}
+.head3 ul {
+  list-style-type: none;
+  display: flex;
+
+  height: max-content;
+}
+.head3 ul li {
+  margin: auto 20px;
+  font-size: 18px;
+  height: max-content;
+}
+.head3 .accphoto {
+  width: 30px;
+  border-radius: 100%;
+}
+.outsideclickhandler{
+  width: 100% ;
+}
